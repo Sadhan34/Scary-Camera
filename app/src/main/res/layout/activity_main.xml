@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:id="@+id/scary"
+    android:layout_height="fill_parent">
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="65sp"
+            android:src="@drawable/hellocam"
+            android:onClick="takePic"
+            android:padding="5sp"
+            android:layout_weight="1"
+            android:id="@+id/takePic" />
+
+    </LinearLayout>
+
+</RelativeLayout>
